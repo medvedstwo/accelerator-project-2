@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  // color: $color-primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+main {
+  flex-grow: 1;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  vertical-align: top;
+}
