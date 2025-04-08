@@ -4,7 +4,15 @@
 @import "vendor/normalize";
 
 // GLOBAL
+@import "./common/mixins.scss";
 @import "./common/variables.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/utility.scss";
+@import "./common/button.scss";
+@import "./common/link.scss";
+
+// BLOCKS
+
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";

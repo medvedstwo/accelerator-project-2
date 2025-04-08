@@ -1,0 +1,7 @@
+.button {
+  @include flex(center, center);
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

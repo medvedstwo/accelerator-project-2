@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
@@ -9,32 +9,35 @@
   </head>
 
   <body class="page-body">
-    <header class="header page__header">
+    <header class="header" data-test="header">
       <div class="header__wrapper">
         <div class="nav header__nav">
-          <button class="nav__button" type="button">
+          <button class="button nav__button" type="button">
+            <span class="nav__button-burger"></span>
+            <span class="nav__button-burger"></span>
+            <span class="nav__button-burger"></span>
             <span class="visually-hidden">Переключить меню.</span>
           </button>
           <div class="nav__wrapper">
             <nav class="nav__main">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#tours" class="nav__link">Туры</a>
+                  <a href="#tours" class="link nav__link">Туры</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#training" class="nav__link">Обучение</a>
+                  <a href="#training" class="link nav__link">Обучение</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#about" class="nav__link">О нас</a>
+                  <a href="#about" class="link nav__link">О нас</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#reviews" class="nav__link">Отзывы</a>
+                  <a href="#reviews" class="link nav__link">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#gallery" class="nav__link">Фотографии</a>
+                  <a href="#gallery" class="link nav__link">Фотографии</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#contacts" class="nav__link">Контакты</a>
+                  <a href="#contacts" class="link nav__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -45,8 +48,8 @@
             <use href="/__spritemap#sprite-logo"></use>
           </svg>
         </div>
-        <div class="header__phone phone">
-          <a href="tel:88000000000" class="phone__link">8 800 000-00-00</a>
+        <div class="header__phone">
+          <a href="tel:88000000000" class="link header__link">8 800 000-00-00</a>
         </div>
       </div>
     </header>
