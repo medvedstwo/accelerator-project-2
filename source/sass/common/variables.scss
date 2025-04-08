@@ -1,0 +1,19 @@
+// viewport and container
+
+$vp-mobile: 320px;
+$vp-tablet: 768px;
+$vp-desktop: 1440px;
+$container-mobile: 290px;
+$container-tablet: 678px;
+$container-desktop: 1200px;
+
+// colors
+
+$color-primary: #2d383f;
+$color-secondary: #0266c1;
+$color-white: #ffffff;
+
+// overlays
+
+$overlay-primary: linear-gradient(112.1deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+$overlay-secondary: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
