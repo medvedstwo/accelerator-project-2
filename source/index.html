@@ -9,13 +9,54 @@
   </head>
 
   <body class="page-body">
+    <header class="header page__header">
+      <div class="header__wrapper">
+        <div class="nav header__nav">
+          <button class="nav__button" type="button">
+            <span class="visually-hidden">Переключить меню.</span>
+          </button>
+          <div class="nav__wrapper">
+            <nav class="nav__main">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#tours" class="nav__link">Туры</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#training" class="nav__link">Обучение</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#about" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#reviews" class="nav__link">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#gallery" class="nav__link">Фотографии</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="logo header__logo">
+          <svg>
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
+        </div>
+        <div class="header__phone phone">
+          <a href="tel:88000000000" class="phone__link">8 800 000-00-00</a>
+        </div>
+      </div>
+    </header>
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
+    <!-- <div data-test="header">header</div>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>
     <div data-test="training">training</div>
@@ -24,7 +65,7 @@
     <div data-test="adv">adv</div>
     <div data-test="gallery">gallery</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <div data-test="footer">footer</div> -->
     <script type="module" src="js/main.js"></script>
   </body>
 
