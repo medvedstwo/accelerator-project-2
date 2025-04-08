@@ -5,6 +5,10 @@
   padding: 15px 0;
   width: 100%;
   background-color: $color-secondary;
+
+  @media (min-width: $vp-tablet) {
+    padding: 20px 0;
+  }
 }
 
 .header__wrapper {
@@ -13,6 +17,12 @@
   row-gap: 14px;
   justify-content: space-between;
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: $container-tablet;
+  }
 }
 
 .header__logo {
@@ -24,11 +34,19 @@
     height: 100%;
     fill: $color-white;
   }
+
+  @media (min-width: $vp-tablet) {
+    justify-self: center;
+  }
 }
 
 .header__phone {
   grid-column: 2/3;
   justify-self: flex-end;
+
+  @media (min-width: $vp-tablet) {
+    grid-column: 3/4;
+  }
 }
 
 .header__link {
@@ -36,4 +54,9 @@
   font-weight: 600;
   line-height: 14px;
   color: $color-white;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

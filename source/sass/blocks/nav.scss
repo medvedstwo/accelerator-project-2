@@ -5,17 +5,37 @@
 .nav__button {
   @include flex(space-evenly, flex-start, column);
 
+  position: relative;
+  padding: 4px 0;
   width: 26px;
   height: 26px;
+
+  @media (min-width: $vp-tablet) {
+    align-self: center;
+  }
 }
 
 .nav__button-burger {
   display: inline-block;
-  width: 100%;
+  width: 60%;
   height: 2px;
   background-color: $color-white;
 
-  &:nth-child(2) {
-    width: 75%;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: $color-white;
+  }
+
+  &::before {
+    top: 4px;
+  }
+
+  &::after {
+    bottom: 4px;
   }
 }
