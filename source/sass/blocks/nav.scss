@@ -1,5 +1,9 @@
 .nav__wrapper {
   display: none;
+
+  @media (min-width: $vp-desktop) {
+    display: block;
+  }
 }
 
 .nav__button {
@@ -12,6 +16,10 @@
 
   @media (min-width: $vp-tablet) {
     align-self: center;
+  }
+
+  @media (min-width: $vp-desktop) {
+    display: none;
   }
 }
 
@@ -38,4 +46,17 @@
   &::after {
     bottom: 4px;
   }
+}
+
+.nav__list {
+  @include flex(center, center);
+  @include list-reset;
+
+  gap: 30px;
+}
+
+.nav__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-white;
 }

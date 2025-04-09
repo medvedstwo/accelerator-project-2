@@ -9,6 +9,10 @@
   @media (min-width: $vp-tablet) {
     padding: 20px 0;
   }
+
+  @media (min-width: $vp-desktop) {
+    padding: 32px 0;
+  }
 }
 
 .header__wrapper {
@@ -22,6 +26,18 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     width: $container-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    grid-template-columns: auto 1fr auto;
+    grid-auto-flow: column;
+    width: $container-desktop;
+  }
+}
+
+.header__nav {
+  @media (min-width: $vp-desktop) {
+    grid-column: 2/3;
   }
 }
 
@@ -37,6 +53,12 @@
 
   @media (min-width: $vp-tablet) {
     justify-self: center;
+  }
+
+  @media (min-width: $vp-desktop) {
+    grid-column: 1/2;
+    width: 205px;
+    height: 62px;
   }
 }
 
@@ -59,5 +81,10 @@
   @media (min-width: $vp-tablet) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
