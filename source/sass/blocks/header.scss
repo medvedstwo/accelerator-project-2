@@ -57,6 +57,7 @@
 
   @media (min-width: $vp-desktop) {
     grid-column: 1/2;
+    padding: 10px 31px;
     width: 205px;
     height: 62px;
   }
@@ -69,6 +70,10 @@
   @media (min-width: $vp-tablet) {
     grid-column: 3/4;
     margin-top: 4px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-top: 5px;
   }
 }
 
