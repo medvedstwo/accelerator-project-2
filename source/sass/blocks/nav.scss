@@ -2,16 +2,15 @@
   display: none;
 
   @media (min-width: $vp-desktop) {
+    position: static;
     display: block;
     margin-top: 2px;
   }
 }
 
 .nav__button {
-  @include flex(space-evenly, flex-start, column);
-
   position: relative;
-  padding: 4px 0;
+  gap: 6px;
   width: 26px;
   height: 26px;
 
@@ -24,44 +23,100 @@
   }
 }
 
+.nav__button--active {
+  .nav__button-burger {
+    &:nth-child(1),
+    &:nth-child(4) {
+      transform: scaleX(0);
+    }
+
+    &:nth-child(2) {
+      transform-origin: center;
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform-origin: center;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 1439px) {
+    & + .nav__wrapper {
+      position: absolute;
+      left: 0;
+      bottom: -100vh;
+      right: 0;
+      display: block;
+      height: 100vh;
+      background-color: rgba(45, 56, 63, 0.6);
+    }
+  }
+}
+
 .nav__button-burger {
+  position: absolute;
+  left: 0;
   display: inline-block;
-  width: 60%;
+  width: 100%;
   height: 2px;
   background-color: $color-white;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: $color-white;
-  }
-
-  &::before {
+  &:nth-child(1) {
     top: 4px;
   }
 
-  &::after {
+  &:nth-child(2),
+  &:nth-child(3) {
+    top: 12px;
+    transform-origin: left;
+    transform: scaleX(0.6);
+  }
+
+  &:nth-child(4) {
     bottom: 4px;
   }
 }
 
+.nav__main {
+  display: grid;
+  grid-template-columns: 1fr $container-mobile 1fr;
+  padding: 50px 0 70px;
+  background-color: $color-secondary;
+
+  @media (min-width: $vp-tablet) {
+    grid-template-columns: 1fr $container-tablet 1fr;
+  }
+
+  @media (min-width: $vp-desktop) {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
 .nav__list {
-  @include flex(center, center);
   @include list-reset;
 
-  gap: 21px;
+  display: grid;
+  row-gap: 26px;
+  grid-column: 2/3;
+
+  @media (min-width: $vp-desktop) {
+    @include flex(center, center);
+    gap: 21px;
+  }
 }
 
 .nav__link {
-  position: relative;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
   color: $color-white;
-  padding: 3px 5px;
+  text-transform: uppercase;
+  letter-spacing: 4%;
+  position: relative;
+  padding: 3px 0;
 
   &:hover {
     &::after {
@@ -94,5 +149,17 @@
   &:disabled {
     color: $color-disabled;
     pointer-events: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    padding: 3px 5px;
   }
 }
