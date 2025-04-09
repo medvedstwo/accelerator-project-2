@@ -83,6 +83,27 @@
   line-height: 14px;
   color: $color-white;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+    pointer-events: none;
+  }
+
   @media (min-width: $vp-tablet) {
     font-size: 16px;
     line-height: 16px;
