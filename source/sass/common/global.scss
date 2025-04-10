@@ -34,6 +34,10 @@ img {
   vertical-align: top;
 }
 
+.page-body {
+  min-width: $vp-mobile;
+}
+
 .page-body--overflow-hidden {
   overflow: hidden;
 }

@@ -54,6 +54,103 @@
         </div>
       </div>
     </header>
+    <main>
+
+    </main>
+    <footer class="footer-container" data-test="footer">
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="title contacts__title">Контакты</h2>
+          <div class="contacts__content">
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          </div>
+          <address class="contacts__address">
+            <ul class="address__list">
+              <li class="address__item address__item--phone">
+                <p class="address__title">Телефон</p>
+                <a href="tel:+79837454545" class="link address__description">+7 983 745-45-45</a>
+              </li>
+              <li class="address__item address__item--email">
+                <p class="address__title">Email</p>
+                <a href="mailto:info@lifetour.com" class="link address__description">info@lifetour.com</a>
+              </li>
+              <li class="address__item address__item--address">
+                <p class="address__title">Адрес</p>
+                <p class="address__description">г. Москва, пр-т Мира, д. 14, офис 101</p>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="contacts__map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="600" height="324">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x" width="768" height="340">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x" width="320" height="343">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.jpg 1x, img/contacts/map-desktop@2x.jpg 2x" width="600" height="324">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.jpg 1x, img/contacts/map-tablet@2x.jpg 2x" width="768" height="340">
+            <img class="contacts__img" src="img/contacts/map-mobile@1x.jpg" srcset="img/contacts/map-mobile@2x.jpg 2x" width="320" height="343" alt="Адрес на карте.">
+          </picture>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__header">
+            <div class="logo footer__logo">
+              <svg>
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
+            </div>
+            <div class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list">
+                  <a href="#tours" class="link footer-nav__link">Туры</a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#training" class="link footer-nav__link">Обучение</a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#about" class="link footer-nav__link">О нас</a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#reviews" class="link footer-nav__link">Отзывы</a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#gallery" class="link footer-nav__link">Фотографии</a>
+                </li>
+                <li class="footer-nav__list">
+                  <a href="#contacts" class="link footer-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__phone">
+              <a href="tel:88000000000" class="link footer__link">8 800 000-00-00</a>
+            </div>
+          </div>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link social__link--vk" target="_blank">
+                  <span class="visually-hidden">Сообщество в ВК.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--ok" target="_blank">
+                  <span class="visually-hidden">Сообщество в Одноклассниках.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--reddit" target="_blank">
+                  <span class="visually-hidden">Сообщество в Reddit.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <a href="#" class="copyright__link link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>

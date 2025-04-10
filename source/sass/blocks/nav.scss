@@ -41,8 +41,8 @@
     }
   }
 
-  @media (max-width: 1439px) {
-    & + .nav__wrapper {
+  @media (width <= 1439px) {
+    + .nav__wrapper {
       position: absolute;
       left: 0;
       bottom: -100vh;
@@ -104,6 +104,7 @@
 
   @media (min-width: $vp-desktop) {
     @include flex(center, center);
+
     gap: 21px;
   }
 }
