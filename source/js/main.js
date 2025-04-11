@@ -4,7 +4,9 @@
 // import 'swiper/css';
 
 import initHeader from './header.js';
+import initTitleData from './title-data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
+  initTitleData();
 });

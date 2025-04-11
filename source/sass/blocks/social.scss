@@ -1,0 +1,47 @@
+.social__list {
+  @include list-reset;
+
+  display: grid;
+  grid-auto-columns: 30px;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social__link {
+  @include flex(center, center);
+
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $color-primary;
+  }
+}
+
+.social__link--vk {
+  &::before {
+    mask-image: url("/__spritemap#sprite-vk-view");
+    mask-size: 16px 9px;
+  }
+}
+
+.social__link--ok {
+  &::before {
+    mask-image: url("/__spritemap#sprite-odnoklassniki-view");
+    mask-size: 9px 16px;
+  }
+}
+
+.social__link--reddit {
+  &::before {
+    mask-image: url("/__spritemap#sprite-reddit-view");
+    mask-size: 14px 15px;
+  }
+}

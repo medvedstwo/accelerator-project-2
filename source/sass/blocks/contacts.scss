@@ -1,0 +1,33 @@
+.contacts {
+  @include flex(flex-start, center, column);
+
+  padding: 36px 0 20px;
+}
+
+.contacts__wrapper {
+  width: $container-mobile;
+}
+
+.contacts__title {
+  margin-bottom: 29px;
+}
+
+.contacts__content {
+  margin-bottom: 30px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.contacts__address {
+  margin-bottom: 30px;
+}
+
+.contacts__map {
+  width: 100vw;
+}
+
+.contacts__img {
+  width: 100%;
+}
