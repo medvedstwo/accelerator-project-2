@@ -3,12 +3,21 @@
 
   padding: 22px 0 20px;
   border-top: 1px solid rgba(45, 56, 63, 0.2);
+
+  @media (min-width: $vp-tablet) {
+    padding: 34px 0 20px;
+  }
 }
 
 .footer__wrapper {
   display: grid;
   row-gap: 23px;
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    row-gap: 34px;
+    width: $container-tablet;
+  }
 }
 
 .footer__logo {
@@ -26,6 +35,11 @@
 .footer__header {
   display: grid;
   row-gap: 20px;
+
+  @media (min-width: $vp-tablet) {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
 }
 
 .footer__phone {

@@ -4,6 +4,11 @@
   font-style: normal;
   display: grid;
   row-gap: 30px;
+
+  @media (min-width: $vp-tablet) {
+    grid-auto-flow: column;
+    column-gap: 40px;
+  }
 }
 
 .address__item {
@@ -44,15 +49,30 @@
     mask-image: url("/__spritemap#sprite-map-view");
     mask-size: 15px 20px;
   }
+
+  @media (min-width: $vp-tablet) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .address__title {
   font-weight: 600;
   line-height: 15px;
   margin: 0;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .address__description {
   color: $color-primary;
   margin: 0;
+
+  @media (min-width: $vp-tablet) {
+    line-height: 22px;
+  }
 }

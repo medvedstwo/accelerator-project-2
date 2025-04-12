@@ -2,14 +2,26 @@
   @include flex(flex-start, center, column);
 
   padding: 36px 0 20px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 60px 0 40px;
+  }
 }
 
 .contacts__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .contacts__title {
   margin-bottom: 29px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__content {
@@ -18,10 +30,24 @@
   p {
     margin: 0;
   }
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 40px;
+    width: 480px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
 
 .contacts__address {
   margin-bottom: 30px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__map {

@@ -8,6 +8,14 @@
   column-gap: 50px;
   row-gap: 9px;
   margin-bottom: -3px;
+
+  @media (min-width: $vp-tablet) {
+    @include flex(flex-end, center);
+
+    grid: none;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .footer-nav__item {
