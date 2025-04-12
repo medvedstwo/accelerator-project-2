@@ -85,5 +85,27 @@
     font-weight: 300;
     line-height: 12px;
     color: $color-primary;
+
+    &:hover {
+      color: $color-primary;
+      opacity: 0.1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: $color-secondary;
+    }
+
+    &:active {
+      color: $color-active;
+    }
+
+    &:disabled {
+      pointer-events: none;
+      color: $color-disabled;
+    }
   }
 }

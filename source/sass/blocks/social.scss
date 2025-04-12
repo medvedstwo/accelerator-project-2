@@ -22,7 +22,7 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  outline: 1px solid rgba(45, 56, 63, 0.3);
+  border: 1px solid rgba(45, 56, 63, 0.3);
 
   &::before {
     content: "";
@@ -31,6 +31,32 @@
     mask-position: center;
     mask-repeat: no-repeat;
     background-color: $color-primary;
+  }
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    border-color: transparent;
+  }
+
+  &:active {
+    border-color: $color-secondary;
+    background-color: $color-secondary;
+
+    &::before {
+      background-color: $color-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
 

@@ -78,7 +78,8 @@
   width: 100vw;
 
   @media (min-width: $vp-desktop) {
-    align-self: center;margin-top: -23px;
+    align-self: center;
+    margin-top: -23px;
     width: 100%;
   }
 }
