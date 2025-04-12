@@ -1,0 +1,47 @@
+.phone__link--light {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $color-primary;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+    pointer-events: none;
+  }
+}
+
+.phone__link--dark {
+  &:hover {
+    color: $color-primary;
+    opacity: 0.1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $color-secondary;
+  }
+
+  &:active {
+    color: $color-active;
+    opacity: 1;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    color: $color-disabled;
+  }
+}
