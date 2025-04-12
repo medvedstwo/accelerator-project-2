@@ -17,6 +17,11 @@
     flex-wrap: wrap;
     margin: 0;
   }
+
+  @media (min-width: $vp-desktop) {
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .footer-nav__item {
@@ -26,4 +31,9 @@
 .footer-nav__link {
   line-height: 14px;
   color: $color-primary;
+
+  @media (min-width: $vp-desktop) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

@@ -9,6 +9,11 @@
     grid-auto-flow: column;
     column-gap: 40px;
   }
+
+  @media (min-width: $vp-desktop) {
+    grid-auto-flow: row;
+    row-gap: 35px;
+  }
 }
 
 .address__item {
@@ -38,6 +43,17 @@
       height: 24px;
     }
   }
+
+  @media (min-width: $vp-desktop) {
+    column-gap: 37px;
+    row-gap: 8px;
+
+    &::before {
+      align-self: center;
+      width: 26px;
+      height: 26px;
+    }
+  }
 }
 
 .address__item--phone {
@@ -51,6 +67,10 @@
       mask-size: 24px 24px;
     }
   }
+
+  @media (min-width: $vp-desktop) {
+    mask-size: 24px 24px;
+  }
 }
 
 .address__item--email {
@@ -62,6 +82,12 @@
   @media (min-width: $vp-tablet) {
     &::before {
       mask-size: 22px 15px;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    &::before {
+      mask-size: 24px 17px;
     }
   }
 }
@@ -81,24 +107,40 @@
       mask-size: 16px 22px;
     }
   }
+
+  @media (min-width: $vp-desktop) {
+    mask-size: 18px 24px;
+  }
 }
 
 .address__title {
   font-weight: 600;
   line-height: 15px;
   margin: 0;
+  width: fit-content;
 
   @media (min-width: $vp-tablet) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 .address__description {
   color: $color-primary;
   margin: 0;
+  width: fit-content;
 
   @media (min-width: $vp-tablet) {
     line-height: 22px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
