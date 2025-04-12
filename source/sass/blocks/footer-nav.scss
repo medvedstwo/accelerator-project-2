@@ -13,8 +13,9 @@
     @include flex(flex-end, center);
 
     grid: none;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
+    margin: 0;
   }
 }
 

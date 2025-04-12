@@ -28,6 +28,16 @@
     mask-position: center;
     mask-repeat: no-repeat;
   }
+
+  @media (min-width: $vp-tablet) {
+    column-gap: 14px;
+    row-gap: 5px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 .address__item--phone {
@@ -35,12 +45,24 @@
     mask-image: url("/__spritemap#sprite-phone-view");
     mask-size: 22px 22px;
   }
+
+  @media (min-width: $vp-tablet) {
+    &::before {
+      mask-size: 24px 24px;
+    }
+  }
 }
 
 .address__item--email {
   &::before {
     mask-image: url("/__spritemap#sprite-mail-view");
     mask-size: 20px 14px;
+  }
+
+  @media (min-width: $vp-tablet) {
+    &::before {
+      mask-size: 22px 15px;
+    }
   }
 }
 
@@ -53,6 +75,10 @@
   @media (min-width: $vp-tablet) {
     br {
       display: none;
+    }
+
+    &::before {
+      mask-size: 16px 22px;
     }
   }
 }
