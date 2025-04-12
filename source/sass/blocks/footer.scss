@@ -1,7 +1,7 @@
 .footer {
   @include flex(flex-start, center, column);
 
-  padding: 23px 0 20px;
+  padding: 22px 0 20px;
   border-top: 1px solid rgba(45, 56, 63, 0.2);
 }
 
@@ -25,7 +25,7 @@
 
 .footer__header {
   display: grid;
-  row-gap: 23px;
+  row-gap: 20px;
 }
 
 .footer__phone {

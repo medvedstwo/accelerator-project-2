@@ -10,8 +10,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 20px 1fr;
-  column-gap: 10px;
-  row-gap: 8px;
+  column-gap: 12px;
+  row-gap: 7px;
 
   &::before {
     content: "";
@@ -48,7 +48,7 @@
 
 .address__title {
   font-weight: 600;
-  line-height: 16px;
+  line-height: 15px;
   margin: 0;
 }
 
