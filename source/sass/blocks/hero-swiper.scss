@@ -3,9 +3,21 @@
 
   position: relative;
   padding: 40px 0 56px;
+
+  &--сaucasus {
+    background-color: #6c8cbb;
+  }
+
+  &--kamchatka {
+    background-color: #1c3755;
+  }
+
+  &--altay {
+    background-color: #10252c;
+  }
 }
 
-.hero-swiper__img {
+.hero-swiper__img-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,12 +26,20 @@
   min-width: 320px;
   width: 100vw;
   min-height: 568px;
+  background-image: $overlay-primary;
+}
+
+.hero-swiper__img {
+  position: absolute;
   object-fit: cover;
   z-index: -1;
 }
 
 .hero-swiper__inner {
   @include flex(center, center, column);
+
+  position: relative;
+  z-index: 2;
   justify-self: center;
   padding: 20px 0;
   width: $container-mobile;
@@ -56,4 +76,30 @@
 
 .hero-swiper__details-list {
   display: none;
+}
+
+.hero-swiper__pagination {
+  @include flex(center, center);
+
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  z-index: 10;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.hero-swiper__bullet {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+
+  &--active {
+    background-color: $color-white;
+  }
 }

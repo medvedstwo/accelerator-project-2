@@ -16,12 +16,14 @@ import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 
 // init Swiper:
 const swiper = new Swiper('.hero-swiper', {
   modules: [Navigation, Pagination],
   pagination: {
-    el: '.swiper-pagination',
+    el: '.hero-swiper__pagination',
+    bulletClass: 'hero-swiper__bullet',
+    bulletActiveClass: 'hero-swiper__bullet--active',
   },
 });
