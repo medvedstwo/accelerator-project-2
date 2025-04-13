@@ -4,4 +4,19 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-secondary;
+    border: 1px solid $color-secondary;
+  }
+}
+
+.button__main {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+
+  padding: 18px 20px;
 }
