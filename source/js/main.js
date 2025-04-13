@@ -26,4 +26,5 @@ const swiper = new Swiper('.hero-swiper', {
     bulletClass: 'hero-swiper__bullet',
     bulletActiveClass: 'hero-swiper__bullet--active',
   },
+  autoHeight: true,
 });
