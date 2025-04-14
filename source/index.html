@@ -23,22 +23,22 @@
             <nav class="nav__main">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#tours" class="link nav__link">Туры</a>
+                  <a class="link nav__link" href="#tours">Туры</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#training" class="link nav__link">Обучение</a>
+                  <a class="link nav__link" href="#training">Обучение</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#about" class="link nav__link">О нас</a>
+                  <a class="link nav__link" href="#about">О нас</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#reviews" class="link nav__link">Отзывы</a>
+                  <a class="link nav__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#gallery" class="link nav__link">Фотографии</a>
+                  <a class="link nav__link" href="#gallery">Фотографии</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#contacts" class="link nav__link">Контакты</a>
+                  <a class="link nav__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -50,7 +50,7 @@
           </svg>
         </div>
         <div class="header__phone phone">
-          <a href="tel:88000000000" class="link header__link phone__link phone__link--light">8 800 000-00-00</a>
+          <a class="link header__link phone__link phone__link--light" href="tel:88000000000">8 800 000-00-00</a>
         </div>
       </div>
     </header>
@@ -134,6 +134,25 @@
           </div>
         </div>
       </section>
+      <section class="form">
+        <div class="form__wrapper">
+          <div class="form__content">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и наш оператор свяжется<br>с вами для консультации.</p>
+          </div>
+          <form class="form__inner" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__label">
+              <input class="form__field" type="tel" name="phone">
+              <span class="form__input">Телефон</span>
+            </label>
+            <label class="form__label">
+              <input class="form__field" type="email" name="email">
+              <span class="form__input">Email</span>
+            </label>
+            <button class="button button--primary form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="footer-container" data-test="footer">
       <section class="contacts">
@@ -146,11 +165,11 @@
             <ul class="address__list">
               <li class="address__item address__item--phone phone">
                 <p class="address__title">Телефон</p>
-                <a href="tel:+79837454545" class="link address__description phone__link phone__link--dark">+7 983 745-45-45</a>
+                <a class="link address__description phone__link phone__link--dark" href="tel:+79837454545">+7 983 745-45-45</a>
               </li>
               <li class="address__item address__item--email phone">
                 <p class="address__title">Email</p>
-                <a href="mailto:info@lifetour.com" class="link address__description phone__link phone__link--dark">info@lifetour.com</a>
+                <a class="link address__description phone__link phone__link--dark" href="mailto:info@lifetour.com">info@lifetour.com</a>
               </li>
               <li class="address__item address__item--address">
                 <p class="address__title">Адрес</p>
@@ -181,50 +200,50 @@
             <div class="footer-nav">
               <ul class="footer-nav__list">
                 <li class="footer-nav__item">
-                  <a href="#tours" class="link footer-nav__link">Туры</a>
+                  <a class="link footer-nav__link" href="#tours">Туры</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="#training" class="link footer-nav__link">Обучение</a>
+                  <a class="link footer-nav__link" href="#training">Обучение</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="#about" class="link footer-nav__link">О нас</a>
+                  <a class="link footer-nav__link" href="#about">О нас</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="#reviews" class="link footer-nav__link">Отзывы</a>
+                  <a class="link footer-nav__link" href="#reviews">Отзывы</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="#gallery" class="link footer-nav__link">Фотографии</a>
+                  <a class="link footer-nav__link" href="#gallery">Фотографии</a>
                 </li>
                 <li class="footer-nav__item">
-                  <a href="#contacts" class="link footer-nav__link">Контакты</a>
+                  <a class="link footer-nav__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
             </div>
             <div class="footer__phone phone">
-              <a href="tel:88007253232" class="link footer__link phone__link phone__link--dark">8 800 725-32-32</a>
+              <a class="link footer__link phone__link phone__link--dark" href="tel:88007253232">8 800 725-32-32</a>
             </div>
           </div>
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a href="#" class="social__link social__link--vk" target="_blank">
+                <a class="social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">Сообщество в ВК.</span>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link--ok" target="_blank">
+                <a class="social__link social__link--ok" href="#" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">Сообщество в Одноклассниках.</span>
                 </a>
               </li>
               <li class="social__item">
-                <a href="#" class="social__link social__link--reddit" target="_blank">
+                <a class="social__link social__link--reddit" href="#" target="_blank" rel="noreferrer noopener">
                   <span class="visually-hidden">Сообщество в Reddit.</span>
                 </a>
               </li>
             </ul>
           </div>
           <div class="footer__copyright">
-            <a href="#" class="link">Политика конфиденциальности</a>
+            <a class="link" href="#">Политика конфиденциальности</a>
           </div>
         </div>
       </section>

@@ -10,6 +10,34 @@
     color: $color-white;
     background-color: $color-secondary;
     border: 1px solid $color-secondary;
+
+    &:hover {
+      color: $color-active;
+      background-color: $color-white;
+      border-color: $color-active;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: $color-active;
+      background-color: $color-white;
+      border-color: $color-white;
+    }
+
+    &:active {
+      color: $color-white;
+      background-color: $color-active;
+      border-color: $color-active;
+    }
+
+    &:disabled {
+      color: $color-white;
+      background-color: $color-disabled;
+      pointer-events: none;
+    }
   }
 }
 

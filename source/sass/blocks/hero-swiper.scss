@@ -12,6 +12,7 @@
   position: relative;
   padding: 40px 0 56px;
   min-height: 568px;
+  height: auto;
 
   &--сaucasus {
     background-color: #6c8cbb;
@@ -103,12 +104,10 @@
 
   @media (min-width: $vp-tablet) {
     margin-bottom: 35px;
-    
     h2 {
       font-size: 56px;
       line-height: 56px;
     }
-    
     p {
       font-size: 17px;
       line-height: 24px;
@@ -178,14 +177,14 @@
 }
 
 .hero-swiper__details-item--duration {
-  &::before { 
+  &::before {
     mask-image: url("/__spritemap#sprite-duration-view");
     mask-size: 11px 11px;
   }
 }
 
 .hero-swiper__details-item--level {
-  &::before { 
+  &::before {
     mask-image: url("/__spritemap#sprite-level-view");
     mask-size: 12px 12px;
   }
@@ -229,13 +228,31 @@
   height: 16px;
   border: 1px solid $color-white;
   border-radius: 50%;
+  cursor: default;
 
   &--active {
     background-color: $color-white;
   }
 
+  &:hover {
+    background-color: #d9d9d9;
+  }
+
+  &:focus { 
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba($color: $color-white, $alpha: 0.5);
+    outline-offset: 2px;
+  }
+
   @media (min-width: $vp-tablet) {
     width: 20px;
     height: 20px;
+  }
+
+  @media (min-width:$vp-desktop) {
+    cursor: pointer;
   }
 }
