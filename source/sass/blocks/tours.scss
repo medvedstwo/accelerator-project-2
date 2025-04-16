@@ -1,0 +1,13 @@
+.tours {
+  @include flex(center, flex-start);
+
+  padding: 36px 20px;
+}
+
+.tours__wrapper {
+  width: $container-mobile;
+}
+
+.tours__title {
+  margin-bottom: 42px;
+}

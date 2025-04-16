@@ -1,0 +1,153 @@
+.tours-card {
+  @include flex(flex-end, center, column);
+
+  position: relative;
+  padding: 30px 20px;
+  min-height: 416px;
+  background-color: #102210;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: $overlay-secondary;
+  }
+}
+
+.tours-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.tours-card__content {
+  color: $color-white;
+  z-index: 1;
+}
+
+.tours-card__header {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-self: center;
+  row-gap: 12px;
+  margin-bottom: 15px;
+}
+
+.tours-card__location {
+  @include flex(flex-start, center);
+
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  gap: 6px;
+  padding: 6px 12px;
+  margin: 0;
+  height: fit-content;
+  width: fit-content;
+  background-color: $color-secondary;
+
+  &::before {
+    content: "";
+    position: relative;
+    width: 16px;
+    height: 16px;
+    mask-image: url("/__spritemap#sprite-tours-map-view");
+    mask-size: 9px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-white;
+  }
+}
+
+.tours-card__list-duration {
+  @include list-reset;
+
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 12px;
+  grid-auto-flow: column;
+}
+
+.tours-card__item-duration {
+  @include flex(flex-start, center);
+
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  gap: 12px;
+
+  &::before {
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    background-color: $color-white;
+  }
+}
+
+.tours__item-duration--days {
+  &::before {
+    mask-image: url("/__spritemap#sprite-sun-view");
+    mask-size: 20px 20px;
+  }
+}
+
+.tours__item-duration--nights {
+  &::before {
+    mask-image: url("/__spritemap#sprite-duration-view");
+    mask-size: 16px 16px;
+  }
+}
+
+.tours-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 31px;
+}
+
+.tours-card__list-description {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 8px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: $color-white;
+    opacity: 0.2;
+  }
+}
+
+.tours-card__item-key {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  margin-bottom: 7px;
+}
+
+.tours-card__item-value {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  position: relative;
+}

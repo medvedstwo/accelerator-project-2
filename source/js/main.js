@@ -21,6 +21,7 @@ import {Navigation, Pagination} from 'swiper/modules';
 // init Swiper:
 const swiper = new Swiper('.hero-swiper', {
   modules: [Navigation, Pagination],
+  loop: true,
   pagination: {
     el: '.hero-swiper__pagination',
     bulletElement: 'button',
@@ -34,5 +35,4 @@ const swiper = new Swiper('.hero-swiper', {
       }
     }
   }
-  // autoHeight: true,
 });
