@@ -5,34 +5,14 @@
 
 import initHeader from './header.js';
 import initTitleData from './title-data.js';
+import initHeroSwiper from './hero-swiper.js';
+import initToursSwiper from './tours-swiper.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initTitleData();
+  initHeroSwiper();
+  initToursSwiper();
 });
 
 
-import Swiper from 'swiper';
-import {Navigation, Pagination} from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
-// init Swiper:
-const swiper = new Swiper('.hero-swiper', {
-  modules: [Navigation, Pagination],
-  loop: true,
-  pagination: {
-    el: '.hero-swiper__pagination',
-    bulletElement: 'button',
-    bulletClass: 'button hero-swiper__bullet',
-    bulletActiveClass: 'hero-swiper__bullet--active',
-  },
-  breakpoints: {
-    1440: {
-      pagination: {
-        clickable: true,
-      }
-    }
-  }
-});
