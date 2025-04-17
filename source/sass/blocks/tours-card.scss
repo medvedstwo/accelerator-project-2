@@ -117,7 +117,11 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  margin-bottom: 31px;
+  margin: 0 0 31px;
+
+  @media (min-width: $vp-desktop) {
+    max-width: 300px;
+  }
 }
 
 .tours-card__list-description {

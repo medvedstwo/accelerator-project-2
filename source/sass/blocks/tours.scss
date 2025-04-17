@@ -1,19 +1,67 @@
 .tours {
   @include flex(center, flex-start);
 
-  padding: 36px 20px;
+  position: relative;
+  padding: 36px 0 20px;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: -205px;
+    width: 346px;
+    height: 595px;
+    background-image: image-set(
+      url("../../img/tours/background/clouds-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/tours/background/clouds-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/tours/background/clouds-mobile@1x.png") type("image/png") 1x,
+      url("../../img/tours/background/clouds-mobile@2x.png") type("image/png") 2x
+    );
+  }
+
+  @media (min-width: $vp-tablet) {
+    padding: 60px 0 40px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 119px 0 100px;
+  }
 }
 
 .tours__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: $container-desktop; 
+  }
 }
 
 .tours__title {
   margin-bottom: 42px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 35px;
+    max-width: 440px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 53px;
+    max-width: 862px;
+  }
 }
 
-.tours__swiper {
+.tours__inner {
+  position: relative;
   margin-bottom: 25px;
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 53px;
+  }
 }
 
 .tours__link {
@@ -31,7 +79,6 @@
   padding: 10px;
   width: fit-content;
 
-
   &::after {
     content: "";
     position: relative;
@@ -43,5 +90,10 @@
     mask-repeat: no-repeat;
     mask-size: 6px 12px;
     background-color: $color-primary;
+  }
+
+  @media (min-width: $vp-tablet) {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
