@@ -48,3 +48,34 @@
 
   padding: 19px 20px;
 }
+
+.button__swiper-nav {
+  position: relative;
+  width: 37px;
+  height: 35px;
+  background-color: $color-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-arrow-line-view");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 14px 9px;
+    background-color: $color-white;
+  }
+
+  &--prev {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--disabled {
+    cursor: auto;
+    pointer-events: none;
+    background-color: $color-disabled;
+  }
+}

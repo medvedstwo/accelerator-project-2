@@ -16,9 +16,9 @@ const toursSwiper = new Swiper('.tours-swiper', {
     }
   },
   navigation: {
-    nextEl: '.tours-swiper__button--next',
-    prevEl: '.tours-swiper__button--prev',
-    disabledClass: 'tours-swiper__button--disabled',
+    nextEl: '.button__swiper-nav--next',
+    prevEl: '.button__swiper-nav--prev',
+    disabledClass: 'button__swiper-nav--disabled',
   }
 });
 

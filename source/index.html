@@ -279,15 +279,143 @@
               </div>
             </div>
             <div class="tours-swiper__nav">
-              <button class="button tours-swiper__button tours-swiper__button--prev" type="button">
+              <button class="button button__swiper-nav button__swiper-nav--prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд.</span>
               </button>
-              <button class="button tours-swiper__button tours-swiper__button--next" type="button">
+              <button class="button button__swiper-nav button__swiper-nav--next" type="button">
                 <span class="visually-hidden">Следующий слайд.</span>
               </button>
             </div>
           </div>
           <a class="link tours__link" href="#">Показать все туры</a>
+        </div>
+      </section>
+      <section class="trainers" data-test="training">
+        <div class="trainers__wrapper">
+          <h2 class="title trainers__title">Обучение</h2>
+          <div class="trainers__content">
+            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          </div>
+          <div class="trainers__inner">
+            <h3 class="title trainers__inner-title">Наши инструкторы</h3>
+            <div class="swiper trainers-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper trainers-swiper__wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide trainers-swiper__slide">
+                  <div class="card trainers-swiper__card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/trainers/trainer-1/trainer-1@1x.webp 1x, img/trainers/trainer-1/trainer-1@2x.webp 2x" width="260" height="200">
+                      <img class="trainers-swiper__card-img" src="img/trainers/trainer-1/trainer-1@1x.jpg" srcset="img/trainers/trainer-1/trainer-1@2x.jpg 2x" alt="Тренер с рюкзаком за спиной." width="260" height="200">
+                    </picture>
+                    <div class="trainers-swiper__content">
+                      <div class="trainers-swiper__content-header">
+                        <h4>Александр Прокофьев</h4>
+                        <a class="social social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                          <span class="visually-hidden">Страница тренера в ВК.</span>
+                        </a>
+                      </div>
+                      <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide trainers-swiper__slide">
+                  <div class="card trainers-swiper__card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/trainers/trainer-2/trainer-2@1x.webp 1x, img/trainers/trainer-2/trainer-2@2x.webp 2x" width="260" height="200">
+                      <img class="trainers-swiper__card-img" src="img/trainers/trainer-2/trainer-2@1x.jpg" srcset="img/trainers/trainer-2/trainer-2@2x.jpg 2x" alt="Тренер на фоне гор в зеленом шарфе." width="260" height="200">
+                    </picture>
+                    <div class="trainers-swiper__content">
+                      <div class="trainers-swiper__content-header">
+                        <h4>Светлана Афиногенова</h4>
+                        <a class="social social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                          <span class="visually-hidden">Страница тренера в ВК.</span>
+                        </a>
+                      </div>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide trainers-swiper__slide">
+                  <div class="card trainers-swiper__card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/trainers/trainer-3/trainer-3@1x.webp 1x, img/trainers/trainer-3/trainer-3@2x.webp 2x" width="260" height="200">
+                      <img class="trainers-swiper__card-img" src="img/trainers/trainer-3/trainer-3@1x.jpg" srcset="img/trainers/trainer-3/trainer-3@2x.jpg 2x" alt="Тренер на фоне гор в черной толстовке." width="260" height="200">
+                    </picture>
+                    <div class="trainers-swiper__content">
+                      <div class="trainers-swiper__content-header">
+                        <h4>Надежда Колесниченко</h4>
+                        <a class="social social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                          <span class="visually-hidden">Страница тренера в ВК.</span>
+                        </a>
+                      </div>
+                      <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide trainers-swiper__slide">
+                  <div class="card trainers-swiper__card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/trainers/trainer-4/trainer-4@1x.webp 1x, img/trainers/trainer-4/trainer-4@2x.webp 2x" width="260" height="200">
+                      <img class="trainers-swiper__card-img" src="img/trainers/trainer-4/trainer-4@1x.jpg" srcset="img/trainers/trainer-4/trainer-4@2x.jpg 2x" alt="Тренер на фоне гор в черной толстовке." width="260" height="200">
+                    </picture>
+                    <div class="trainers-swiper__content">
+                      <div class="trainers-swiper__content-header">
+                        <h4>Федор Кайгородов</h4>
+                        <a class="social social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                          <span class="visually-hidden">Страница тренера в ВК.</span>
+                        </a>
+                      </div>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide trainers-swiper__slide">
+                  <div class="card trainers-swiper__card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/trainers/trainer-5/trainer-5@1x.webp 1x, img/trainers/trainer-5/trainer-5@2x.webp 2x" width="260" height="200">
+                      <img class="trainers-swiper__card-img" src="img/trainers/trainer-5/trainer-5@1x.jpg" srcset="img/trainers/trainer-5/trainer-5@2x.jpg 2x" alt="Тренер на фоне заснеженного озера." width="260" height="200">
+                    </picture>
+                    <div class="trainers-swiper__content">
+                      <div class="trainers-swiper__content-header">
+                        <h4>Даниэль Васнецов</h4>
+                        <a class="social social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener">
+                          <span class="visually-hidden">Страница тренера в ВК.</span>
+                        </a>
+                      </div>
+                      <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trainers-swiper__nav">
+                <button class="button button__swiper-nav button__swiper-nav--prev" type="button">
+                  <span class="visually-hidden">Предыдущий слайд.</span>
+                </button>
+                <button class="button button__swiper-nav button__swiper-nav--next" type="button">
+                  <span class="visually-hidden">Следующий слайд.</span>
+                </button>
+              </div>
+        
+            </div>
+          </div>
+          <div class="trainers__inner">
+            <h3 class="title trainers__inner-title">Процесс обучения</h3>
+            <ol class="trainers__education-list">
+              <li class="trainers__education-item trainers__education-item--study">
+                <p class="trainers__education-description">Изучение спортивного туристского движения</p>
+              </li>
+              <li class="trainers__education-item trainers__education-item--training">
+                <p class="trainers__education-description">Подготовка и техническое снаряжение в походах</p>
+              </li>
+              <li class="trainers__education-item trainers__education-item--lecture">
+                <p class="trainers__education-description">Лекции по окружающей среде, экологии и гигиене</p>
+              </li>
+              <li class="trainers__education-item trainers__education-item--complexity">
+                <p class="trainers__education-description">Разъяснение сложности горных препятствий</p>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
       <section class="form" data-test="form">
