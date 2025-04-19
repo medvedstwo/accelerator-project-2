@@ -10,6 +10,13 @@ const trainersSwiper = new Swiper('.trainers-swiper', {
     nextEl: '.button__swiper-nav--next',
     prevEl: '.button__swiper-nav--prev',
     disabledClass: 'button__swiper-nav--disabled',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      initialSlide: 0,
+      spaceBetween: 20,
+    }
   }
 });
 

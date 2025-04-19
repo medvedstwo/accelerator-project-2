@@ -2,10 +2,18 @@
   @include flex(flex-start, center, column);
 
   padding: 36px 0 20px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 60px 40px;
+  }
 }
 
 .trainers__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .trainers__title {
@@ -17,6 +25,20 @@
 
   p {
     margin: 0;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -32,6 +54,29 @@
 
   &::before {
     content: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+.trainers__education-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 25px;
+
+  &::before {
+    content: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 104px;
   }
 }
 
@@ -51,6 +96,16 @@
     width: 2px;
     background-color: $color-secondary;
   }
+
+  @media (min-width: $vp-tablet) {
+    grid-template-columns: 232px 272px;
+    justify-content: space-between;
+    row-gap: 104px;
+
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .trainers__education-item {
@@ -68,7 +123,18 @@
     border-radius: 50%;
   }
 
+  @media (min-width: $vp-tablet) {
+    padding-left: 0;
 
+    &:nth-child(4) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
 }
 
 .trainers__education-description {
@@ -77,6 +143,7 @@
   line-height: 18px;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  justify-content: flex-start;
   column-gap: 9px;
   margin: 0;
 
