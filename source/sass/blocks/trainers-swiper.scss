@@ -20,6 +20,10 @@
   @media (min-width: $vp-tablet) {
     height: 200px;
   }
+
+  @media (min-width: $vp-desktop) {
+    width: 255px;
+  }
 }
 
 .trainers-swiper__content {
@@ -46,4 +50,15 @@
 
 .trainers-swiper__nav {
   display: none;
+
+  @media (min-width: $vp-tablet) {
+    @include flex(flex-end, center);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    gap: 4px;
+    max-width: 238px;
+  }
 }

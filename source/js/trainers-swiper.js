@@ -16,6 +16,11 @@ const trainersSwiper = new Swiper('.trainers-swiper', {
       slidesPerView: 3,
       initialSlide: 0,
       spaceBetween: 20,
+    },
+    1440: {
+      slidesPerView: 4,
+      initialSlide: 0,
+      spaceBetween: 20,
     }
   }
 });
