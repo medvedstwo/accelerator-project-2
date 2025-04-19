@@ -1,0 +1,37 @@
+.trainers-swiper__wrapper {
+  align-items: stretch;
+}
+
+.trainers-swiper__slide {
+  display: flex;
+  height: auto;
+}
+
+.trainers-swiper__card {
+  padding: 15px;
+}
+
+.trainers-swiper__card-img {
+  margin-bottom: 15px;
+}
+
+.trainers-swiper__content {
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+}
+
+.trainers-swiper__content-header {
+  @include flex(space-between, flex-start);
+
+  margin-bottom: 15px;
+
+  h4 {
+    margin: 0;
+    max-width: 140px;
+  }
+}.trainers-swiper__nav {
+  display: none;
+}
