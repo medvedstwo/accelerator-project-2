@@ -416,13 +416,15 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" data-test="about">
         <div class="about__wrapper">
           <div class="about__img-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/about/about-desktop@1x.webp 1x, img/about/about-desktop@2x.webp 2x" width="660" height="498">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/about/about-tablet@1x.webp 1x, img/about/about-tablet@2x.webp 2x" width="542" height="350">
               <source type="image/webp" media="(min-width: 320px)" srcset="img/about/about-mobile@1x.webp 1x, img/about/about-mobile@2x.webp 2x" width="434" height="400">
+              <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/about/about-desktop@1x.jpeg 1x, img/about/about-desktop@2x.jpeg 2x" width="660" height="498">
+              <source type="image/jpeg" media="(min-width: 768px)" srcset="img/about/about-tablet@1x.jpeg 1x, img/about/about-tablet@2x.jpeg 2x" width="542" height="350">
               <img class="about__img" src="img/about/about-mobile@1x.jpg" srcset="img/about/about-mobile@2x.jpg 2x" alt="Поход в горах." width="434" height="400">
             </picture>
           </div>
@@ -435,6 +437,109 @@
             <div class="about__content-inner">
               <h3>Наша цель</h3>
               <p>Подарить вам незабываемые впечатления от похода в горы. Мы&nbsp;берём на себя все&nbsp;организационные вопросы. При&nbsp;организации мы обязательно учтём<br>все ваши пожелания. Вам&nbsp;останется только наслаждаться незабываемым приключением&nbsp;в&nbsp;приятной компании.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" data-test="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="title reviews__title">Отзывы</h2>
+          <div class="reviews__inner">
+            <div class="swiper reviews-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper reviews-swiper__wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide reviews-swiper__slide">
+                  <div class="reviews-card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/review-1/review-1-desktop@1x.webp 1x, img/reviews/review-1/review-1-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-1/review-1-tablet@1x.webp 1x, img/reviews/review-1/review-1-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/review-1/review-1-mobile@1x.webp 1x, img/reviews/review-1/review-1-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews/review-1/review-1-desktop@1x.jpg 1x, img/reviews/review-1/review-1-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-1/review-1-tablet@1x.jpg 1x, img/reviews/review-1/review-1-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__img" src="img/reviews/review-1/review-1-mobile@1x.jpg" srcset="img/reviews/review-1/review-1-mobile@2x.jpg 2x" alt="Мужчина сидит на камнях на фоне горы." width="250" height="169">
+                    </picture>
+                    <div class="reviews-card__content">
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <div class="reviews-card__inner">
+                      <h3 class="reviews-card__title"></h3>
+                      <p class="reviews-card__description"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-swiper__slide">
+                  <div class="reviews-card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/review-2/review-2-desktop@1x.webp 1x, img/reviews/review-2/review-2-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-2/review-2-tablet@1x.webp 1x, img/reviews/review-2/review-2-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/review-2/review-2-mobile@1x.webp 1x, img/reviews/review-2/review-2-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews/review-2/review-2-desktop@1x.jpg 1x, img/reviews/review-2/review-2-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-2/review-2-tablet@1x.jpg 1x, img/reviews/review-2/review-2-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__img" src="img/reviews/review-2/review-2-mobile@1x.jpg" srcset="img/reviews/review-2/review-2-mobile@2x.jpg 2x" alt="Мужчина стоит на камне на краю и смотрит на горы." width="250" height="169">
+                    </picture>
+                    <div class="reviews-card__content">
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <div class="reviews-card__inner">
+                      <h3 class="reviews-card__title"></h3>
+                      <p class="reviews-card__description"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-swiper__slide">
+                  <div class="reviews-card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/review-3/review-3-desktop@1x.webp 1x, img/reviews/review-3/review-3-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-3/review-3-tablet@1x.webp 1x, img/reviews/review-3/review-3-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/review-3/review-3-mobile@1x.webp 1x, img/reviews/review-3/review-3-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews/review-3/review-3-desktop@1x.jpg 1x, img/reviews/review-3/review-3-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-3/review-3-tablet@1x.jpg 1x, img/reviews/review-3/review-3-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__img" src="img/reviews/review-3/review-3-mobile@1x.jpg" srcset="img/reviews/review-3/review-3-mobile@2x.jpg 2x" alt="Девушка в сине-зеленой куртке улыбается." width="250" height="169">
+                    </picture>
+                    <div class="reviews-card__content">
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <div class="reviews-card__inner">
+                      <h3 class="reviews-card__title"></h3>
+                      <p class="reviews-card__description"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-swiper__slide">
+                  <div class="reviews-card">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews/review-4/review-4-desktop@1x.webp 1x, img/reviews/review-4/review-4-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews/review-4/review-4-tablet@1x.webp 1x, img/reviews/review-4/review-4-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/reviews/review-4/review-4-mobile@1x.webp 1x, img/reviews/review-4/review-4-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews/review-4/review-4-desktop@1x.jpg 1x, img/reviews/review-4/review-4-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews/review-4/review-4-tablet@1x.jpg 1x, img/reviews/review-4/review-4-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__img" src="img/reviews/review-4/review-4-mobile@1x.jpg" srcset="img/reviews/review-4/review-4-mobile@2x.jpg 2x" alt="Девушка на фоне песчаных гор." width="250" height="169">
+                    </picture>
+                    <div class="reviews-card__content">
+                      <p></p>
+                      <p></p>
+                    </div>
+                    <div class="reviews-card__inner">
+                      <h3 class="reviews-card__title"></h3>
+                      <p class="reviews-card__description"></p>
+                    </div>
+                  </div>
+                </div>
+              
+                ...
+              </div>
+              <!-- If we need pagination -->
+              
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+             
             </div>
           </div>
         </div>
