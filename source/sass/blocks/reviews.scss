@@ -1,0 +1,15 @@
+.reviews {
+  @include flex(flex-start, center, column);
+
+  padding: 36px 0 5px;
+}
+
+.reviews__wrapper {
+  // width: $container-mobile;
+  width: 100%;
+}
+
+.reviews__title {
+  margin: 0 auto 17px;
+  width: $container-mobile;
+}

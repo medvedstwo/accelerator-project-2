@@ -8,6 +8,7 @@ import initTitleData from './title-data.js';
 import initHeroSwiper from './hero-swiper.js';
 import initToursSwiper from './tours-swiper.js';
 import initTrainersSwiper from './trainers-swiper.js';
+import initReviewsSwiper from './reviews-swiper.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroSwiper();
   initToursSwiper();
   initTrainersSwiper();
+  initReviewsSwiper();
 });
 
 
