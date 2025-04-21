@@ -2,14 +2,22 @@
   @include flex(flex-start, center, column);
 
   padding: 36px 0 5px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 60px 0 25px;
+    overflow-x: hidden;
+  }
 }
 
 .reviews__wrapper {
-  // width: $container-mobile;
   width: 100%;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .reviews__title {
-  margin: 0 auto 17px;
+  margin-bottom: 20px;
   width: $container-mobile;
 }

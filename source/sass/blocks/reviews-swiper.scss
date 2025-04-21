@@ -1,5 +1,24 @@
+.reviews-swiper {
+  @media (min-width: $vp-tablet) {
+    overflow: visible;
+  }
+}
+
+.reviews-swiper__wrapper {
+  @media (min-width: $vp-tablet) {
+    align-items: stretch;
+  }
+}
+
 .reviews-swiper__slide {
   padding: 15px;
+  width: min-content;
+  height: min-content;
+
+  @media (min-width: $vp-tablet) {
+    display: flex;
+    margin-left: -15px;
+  }
 }
 
 .reviews-swiper__nav {

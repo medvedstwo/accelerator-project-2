@@ -5,15 +5,15 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
   modules: [ Navigation],
   init: false,
   loop: false,
-  autoHeight: true,
   breakpoints: {
     320: {
+      autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 30,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 'auto',
+      spaceBetween: 15,
     },
     1440: {
       slidesPerView: 3,
