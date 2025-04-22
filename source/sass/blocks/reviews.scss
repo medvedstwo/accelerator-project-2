@@ -7,6 +7,10 @@
     padding: 60px 0 25px;
     overflow-x: hidden;
   }
+
+  @media (min-width: $vp-desktop) {
+    padding: 145px 0 77px;
+  }
 }
 
 .reviews__wrapper {
@@ -14,6 +18,10 @@
 
   @media (min-width: $vp-tablet) {
     width: $container-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: $container-desktop;
   }
 }
 

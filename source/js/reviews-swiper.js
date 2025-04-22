@@ -14,10 +14,12 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
     768: {
       slidesPerView: 'auto',
       spaceBetween: 15,
+      slidesOffsetAfter: 120,
     },
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 90,
+      slidesOffsetAfter: 500,
     }
   },
   navigation: {

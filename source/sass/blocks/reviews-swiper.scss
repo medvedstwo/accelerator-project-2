@@ -7,17 +7,22 @@
 .reviews-swiper__wrapper {
   @media (min-width: $vp-tablet) {
     align-items: stretch;
+    padding: 15px;
+    margin-left: -15px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 10px;
+    margin-left: 0;
   }
 }
 
 .reviews-swiper__slide {
-  padding: 15px;
   width: min-content;
   height: min-content;
 
   @media (min-width: $vp-tablet) {
     display: flex;
-    margin-left: -15px;
   }
 }
 
