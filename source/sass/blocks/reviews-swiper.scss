@@ -1,10 +1,16 @@
 .reviews-swiper {
+  width: $vp-mobile;
+  padding: 15px;
+
   @media (min-width: $vp-tablet) {
     overflow: visible;
+    width: auto;
+    padding: 0;
   }
 }
 
 .reviews-swiper__wrapper {
+
   @media (min-width: $vp-tablet) {
     align-items: stretch;
     padding: 15px;
@@ -38,5 +44,9 @@
     z-index: 2;
     gap: 4px;
     max-width: 238px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    top: -70px;
   }
 }
