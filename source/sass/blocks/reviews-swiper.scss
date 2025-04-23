@@ -10,7 +10,6 @@
 }
 
 .reviews-swiper__wrapper {
-
   @media (min-width: $vp-tablet) {
     align-items: stretch;
     padding: 15px;
@@ -29,6 +28,7 @@
 
   @media (min-width: $vp-tablet) {
     display: flex;
+    height: auto;
   }
 }
 

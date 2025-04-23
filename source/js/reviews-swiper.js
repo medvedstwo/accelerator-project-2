@@ -10,6 +10,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
       autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 30,
+      slidesOffsetAfter: 0,
     },
     768: {
       slidesPerView: 'auto',
@@ -18,7 +19,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
     },
     1440: {
       slidesPerView: 'auto',
-      spaceBetween: 90,
+      spaceBetween: 143,
       slidesOffsetAfter: 500,
     }
   },

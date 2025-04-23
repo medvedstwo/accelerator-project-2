@@ -26,6 +26,10 @@
     grid-row: 1/2;
     width: 186px;
   }
+
+  @media (min-width: $vp-desktop) {
+    width: 258px;
+  }
 }
 
 .reviews-card__inner {
@@ -39,7 +43,7 @@
   }
 
   @media (min-width: $vp-desktop) {
-    row-gap: 0;
+    row-gap: 2px;
   }
 }
 
@@ -52,6 +56,21 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-desktop) {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    br {
+      display: inline;
+    }
   }
 }
 
@@ -70,6 +89,11 @@
   font-weight: 700;
   line-height: 12px;
   margin: 0;
+
+  @media (min-width: $vp-desktop) {
+    font-size: 13px;
+    line-height: 13px;
+  }
 }
 
 .reviews-card__description {

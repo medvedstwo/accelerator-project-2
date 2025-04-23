@@ -19,4 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initReviewsSwiper();
 });
 
+import Swiper from 'swiper';
+import {Navigation} from 'swiper/modules';
 
+const featuresSwiper = new Swiper('.features-swiper', {
+  init: false,
+});
