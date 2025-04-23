@@ -4,4 +4,9 @@
 
 .features-swiper__wrapper {
   flex-direction: column;
+  gap: 15px;
+}
+
+.features-swiper__nav {
+  display: none;
 }

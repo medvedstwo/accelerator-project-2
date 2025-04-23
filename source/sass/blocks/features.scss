@@ -1,0 +1,12 @@
+.features {
+  @include flex(flex-start, center, column);
+  padding: 36px 0 20px;
+}
+
+.features__wrapper {
+  width: $container-mobile;
+}
+
+.features__title {
+  margin-bottom: 37px;;
+}

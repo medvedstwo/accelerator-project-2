@@ -44,3 +44,12 @@
     left: 1px;
   }
 }
+
+.title--center {
+  text-align: center;
+
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
