@@ -5,6 +5,19 @@
 .features-swiper__wrapper {
   flex-direction: column;
   gap: 15px;
+
+  @media (min-width: $vp-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.features-swiper__slide {
+  @media (min-width: $vp-tablet) {
+    width: 324px;
+  }
 }
 
 .features-swiper__nav {

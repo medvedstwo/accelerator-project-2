@@ -1,12 +1,24 @@
 .features {
   @include flex(flex-start, center, column);
   padding: 36px 0 20px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 60px 0 40px;
+  }
 }
 
 .features__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
 }
 
 .features__title {
-  margin-bottom: 37px;;
+  margin-bottom: 37px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 60px;
+  }
 }

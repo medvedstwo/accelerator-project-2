@@ -48,6 +48,16 @@
       background-size: 22px 15px;
     }
   }
+
+  @media (min-width: $vp-tablet) {
+    padding: 29px 19px;
+
+    &::before {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .features-card__content {
@@ -62,5 +72,25 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    h3 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    br {
+      display: inline;
+    }
   }
 }
