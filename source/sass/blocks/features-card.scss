@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   padding: 19px 8px;
+  height: 100%;
 
   &::before {
     content: "";
@@ -53,9 +54,20 @@
     padding: 29px 19px;
 
     &::before {
+      margin-bottom: 25px;
       width: 48px;
       height: 48px;
-      margin-bottom: 25px;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 39px 19px;
+    width: 380px;
+
+    &::before {
+      margin-bottom: 30px;
+      width: 54px;
+      height: 54px;
     }
   }
 }
@@ -91,6 +103,17 @@
 
     br {
       display: inline;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    h3 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    br {
+      display: none;
     }
   }
 }

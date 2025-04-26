@@ -5,6 +5,10 @@
   @media (min-width: $vp-tablet) {
     padding: 60px 0 40px;
   }
+
+  @media (min-width: $vp-desktop) {
+    padding: 135px 0 100px;
+  }
 }
 
 .features__wrapper {
@@ -13,6 +17,10 @@
   @media (min-width: $vp-tablet) {
     width: $container-tablet;
   }
+
+  @media (min-width: $vp-desktop) {
+    width: 100vw;
+  }
 }
 
 .features__title {
@@ -20,5 +28,10 @@
 
   @media (min-width: $vp-tablet) {
     margin-bottom: 60px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: $container-desktop;
+    margin: 0 auto 50px;
   }
 }

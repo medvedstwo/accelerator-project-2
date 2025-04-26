@@ -1,5 +1,9 @@
 .features-swiper {
   overflow: auto;
+
+  @media (min-width: $vp-desktop) {
+    overflow: hidden;
+  }
 }
 
 .features-swiper__wrapper {
@@ -11,6 +15,12 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+
+    @media (min-width: $vp-desktop) {
+      align-items: stretch;
+      flex-wrap: nowrap;
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -18,8 +28,20 @@
   @media (min-width: $vp-tablet) {
     width: 324px;
   }
+
+  @media (min-width: $vp-desktop) {
+    width: 380px;
+    height: auto;
+  }
 }
 
 .features-swiper__nav {
   display: none;
+
+  @media (min-width: $vp-desktop) {
+    @include flex(center, center);
+    gap: 4px;
+    margin: 0 auto;
+    width: $container-desktop;
+  }
 }
