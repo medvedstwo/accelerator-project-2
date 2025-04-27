@@ -1,0 +1,29 @@
+.gallery {
+  // @include flex(flex-start, center, column);
+  padding: 36px 0 3px;
+}
+
+.gallery__wrapper {
+  margin: 0 auto;
+  width: $container-mobile;
+  max-height: 266px;
+  overflow-x: hidden;
+}
+
+.gallery__title {
+  margin: 0 0 27px;
+}
+
+.gallery__content {
+  margin-bottom: 31px;
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+}
+
+.gallery__inner {
+  margin: 0 auto;
+  width: $vp-mobile;
+}

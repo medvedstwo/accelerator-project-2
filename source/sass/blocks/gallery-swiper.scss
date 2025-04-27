@@ -1,0 +1,18 @@
+.gallery-swiper__wrapper {
+  align-items: stretch;
+}
+
+.gallery-swiper__slide {
+  height: auto;
+}
+
+.gallery-swiper__slide--double {
+  display: grid;
+  grid-template-rows: 2 auto;
+  row-gap: 5px;
+}
+
+.gallery-swiper__img {
+  height: 100%;
+  object-fit: cover;
+} 

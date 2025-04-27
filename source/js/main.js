@@ -21,3 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initTrainersSwiper();
   initReviewsSwiper();
 });
+
+const gallerySwiper = new Swiper('.gallery-swiper', {
+  modules: [ Navigation],
+  init: true,
+  loop: true,
+  breakpoints: {
+    320: {
+      autoHeight: false,
+      slidesPerView: 2,
+      spaceBetween: 4,
+    },
+  },
+});

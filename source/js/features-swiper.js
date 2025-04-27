@@ -1,17 +1,13 @@
 import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 
-const initFeaturesSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
+const initFeaturesSwiper = (breakpoint, swiperClass, swiperSettings) => {
   let swiper;
 
   breakpoint = window.matchMedia(breakpoint);
 
   const enableSwiper = function(className, settings) {
     swiper = new Swiper(className, settings);
-
-    if (callback) {
-      callback(swiper);
-    }
   };
 
   const checker = function() {
