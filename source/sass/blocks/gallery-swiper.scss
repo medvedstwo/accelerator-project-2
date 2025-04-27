@@ -1,5 +1,11 @@
 .gallery-swiper__wrapper {
   align-items: stretch;
+
+  @media (min-width: $vp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(5, 284px);
+    justify-content: space-between;
+  }
 }
 
 .gallery-swiper__slide {
@@ -30,5 +36,9 @@
     z-index: 2;
     gap: 4px;
     max-width: 238px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    display: none;
   }
 }
