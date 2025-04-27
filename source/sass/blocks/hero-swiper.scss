@@ -7,12 +7,25 @@
 }
 
 .hero-swiper__slide {
-  @include flex(center, center);
+  @include flex(center, center, column);
 
   position: relative;
   padding: 40px 0 56px;
   min-height: 568px;
   height: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: $overlay-primary;
+  }
 
   &--сaucasus {
     background-color: #6c8cbb;
@@ -38,23 +51,16 @@
   }
 }
 
-.hero-swiper__img-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  min-width: 320px;
-  width: 100vw;
-  background-image: $overlay-primary;
-}
-
 .hero-swiper__img {
   position: absolute;
   object-fit: cover;
   z-index: -1;
   width: 100%;
-  height: 100%
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .hero-swiper__inner {
@@ -188,6 +194,10 @@
     mask-image: url("/__spritemap#sprite-level-view");
     mask-size: 12px 12px;
   }
+}
+
+.hero-swiper__img-photo {
+  display: none
 }
 
 .hero-swiper__pagination-wrapper {
