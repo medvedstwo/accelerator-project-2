@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const gallerySwiper = new Swiper('.gallery-swiper', {
   modules: [ Navigation],
-  init: true,
   loop: true,
   breakpoints: {
     320: {
