@@ -28,9 +28,12 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
   loop: true,
   breakpoints: {
     320: {
-      autoHeight: false,
       slidesPerView: 2,
       spaceBetween: 4,
     },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    }
   },
 });
