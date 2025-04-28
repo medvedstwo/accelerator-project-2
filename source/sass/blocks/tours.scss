@@ -2,7 +2,7 @@
   @include flex(center, flex-start);
 
   position: relative;
-  padding: 36px 0 20px;
+  padding: 39px 0 19px;
   overflow-x: hidden;
 
   &::before {
@@ -42,7 +42,7 @@
 }
 
 .tours__title {
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
   @media (min-width: $vp-tablet) {
     margin-bottom: 35px;
@@ -73,7 +73,7 @@
   line-height: 14px;
   color: $color-primary;
   text-transform: uppercase;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   justify-self: center;
   gap: 12px;
   padding: 10px;
@@ -83,12 +83,12 @@
     content: "";
     position: relative;
     right: 0;
-    width: 6px;
-    height: 12px;
+    width: 8px;
+    height: 14px;
     mask-image: url("/__spritemap#sprite-arrow-right-view");
     mask-position: center;
     mask-repeat: no-repeat;
-    mask-size: 6px 12px;
+    mask-size: 8px 14px;
     background-color: $color-primary;
   }
 
