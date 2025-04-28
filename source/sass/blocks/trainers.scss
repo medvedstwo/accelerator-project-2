@@ -1,7 +1,7 @@
 .trainers {
   @include flex(flex-start, center, column);
 
-  padding: 36px 0 20px;
+  padding: 37px 0 23px;
 
   @media (min-width: $vp-tablet) {
     padding: 60px 0 40px;
@@ -25,7 +25,7 @@
 }
 
 .trainers__title {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: $vp-desktop) {
     margin-bottom: 37px;
@@ -34,7 +34,7 @@
 }
 
 .trainers__content {
-  margin-bottom: 25px;
+  margin-bottom: 29px;
 
   p {
     margin: 0;
@@ -77,10 +77,10 @@
 }
 
 .trainers__inner-title {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  margin-bottom: 22px;
 
   &::before {
     content: none;
@@ -98,7 +98,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   &::before {
     content: none;

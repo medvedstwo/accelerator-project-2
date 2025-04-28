@@ -13,7 +13,7 @@
 
 .trainers-swiper__card-img {
   margin-bottom: 15px;
-  width: auto;
+  width: 100vw;
   height: 200px;
   object-fit: cover;
 
@@ -45,6 +45,17 @@
     line-height: 16px;
     margin: 0;
     max-width: 140px;
+  }
+
+  a {
+    width: 24px;
+    height: 24px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      mask-size: 14px 8px;
+    }
   }
 }
 
