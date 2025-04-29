@@ -18,6 +18,7 @@
   object-fit: cover;
 
   @media (min-width: $vp-tablet) {
+    margin-bottom: 16px;
     height: 200px;
   }
 
@@ -66,7 +67,7 @@
     @include flex(flex-end, center);
 
     position: absolute;
-    top: 0;
+    top: -3px;
     right: 0;
     z-index: 2;
     gap: 4px;
