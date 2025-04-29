@@ -1,6 +1,6 @@
 .features {
   @include flex(flex-start, center, column);
-  padding: 36px 0 20px;
+  padding: 37px 0 20px;
 
   @media (min-width: $vp-tablet) {
     padding: 60px 0 40px;

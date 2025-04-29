@@ -41,6 +41,11 @@
   column-gap: 6px;
   flex-wrap: wrap;
   margin-bottom: 15px;
+
+  @media (min-width: $vp-tablet) {
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
 }
 
 .tours-card__location {
@@ -77,6 +82,10 @@
   grid-template-columns: auto;
   column-gap: 12px;
   grid-auto-flow: column;
+
+  @media (min-width: $vp-tablet) {
+    column-gap: 15px;
+  }
 }
 
 .tours-card__item-duration {
@@ -142,6 +151,10 @@
     background-color: $color-white;
     opacity: 0.2;
   }
+
+  @media (min-width: $vp-tablet) {
+    column-gap: 25px;
+  }
 }
 
 .tours-card__item-key {
@@ -164,6 +177,17 @@
     height: 16px;
     font-size: 16px;
     letter-spacing: 1px;
+  }
+
+  @media (min-width: $vp-tablet) {
+    margin-left: px;
+    letter-spacing: 0;
+  }
+}
+
+.tours-card__item-value--complexity-3 {
+  &::after {
+    content: "★★★☆☆";
   }
 }
 

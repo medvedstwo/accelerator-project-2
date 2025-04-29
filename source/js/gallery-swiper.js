@@ -32,8 +32,8 @@ initGallerySwiper(
     loop: true,
     breakpoints: {
       320: {
-        slidesPerView: 2,
-        spaceBetween: 4,
+        slidesPerView: 'auto',
+        spaceBetween: 5,
       },
       768: {
         slidesPerView: 3,

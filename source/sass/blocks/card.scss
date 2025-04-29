@@ -1,5 +1,6 @@
 .card {
   @include flex(flex-start, center, column);
 
+  background-color: $color-white;
   border: 1px solid rgba(2, 102, 193, 0.1)
 }

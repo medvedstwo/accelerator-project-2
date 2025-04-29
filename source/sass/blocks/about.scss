@@ -12,6 +12,8 @@
 }
 
 .about__wrapper {
+  overflow-x: hidden;
+  
   @media (min-width: $vp-tablet) {
     display: grid;
     grid-template-columns: 1fr 406px 270px 1fr;

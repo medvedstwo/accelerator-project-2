@@ -5,21 +5,6 @@
   padding: 39px 0 19px;
   overflow-x: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    right: -205px;
-    width: 346px;
-    height: 595px;
-    background-image: image-set(
-      url("../../img/tours/background/clouds-mobile@1x.webp") type("image/webp") 1x,
-      url("../../img/tours/background/clouds-mobile@2x.webp") type("image/webp") 2x,
-      url("../../img/tours/background/clouds-mobile@1x.png") type("image/png") 1x,
-      url("../../img/tours/background/clouds-mobile@2x.png") type("image/png") 2x
-    );
-  }
-
   @media (min-width: $vp-tablet) {
     padding: 60px 0 40px;
   }
@@ -58,6 +43,10 @@
 .tours__inner {
   position: relative;
   margin-bottom: 25px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 26px;
+  }
 
   @media (min-width: $vp-desktop) {
     margin-bottom: 53px;
