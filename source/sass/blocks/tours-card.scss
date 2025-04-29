@@ -32,6 +32,10 @@
 .tours-card__content {
   color: $color-white;
   z-index: 1;
+
+  @media (min-width: $vp-desktop) {
+    width: 100%;
+  }
 }
 
 .tours-card__header {
@@ -154,6 +158,10 @@
 
   @media (min-width: $vp-tablet) {
     column-gap: 25px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    column-gap: 50px;
   }
 }
 
