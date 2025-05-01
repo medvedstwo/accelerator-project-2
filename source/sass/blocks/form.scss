@@ -1,5 +1,6 @@
 .form {
   position: relative;
+
   // display: grid;
   // grid-template-rows: 1fr auto 1fr;
   display: flex;
@@ -8,17 +9,17 @@
   justify-content: center;
   padding: 20px 0;
   min-height: 638px;
-  background-image: 
-  image-set(
-    url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
-    url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
-    url("../../img/form/form-tablet@2x.jpg") type("image/jpeg") 2x,
-    url("../../img/form/form-tablet@1x.jpg") type("image/jpeg") 1x,
+  background-image:
+    image-set(
+      url("../../img/form/form-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/form/form-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/form/form-tablet@2x.jpg") type("image/jpeg") 2x,
+      url("../../img/form/form-tablet@1x.jpg") type("image/jpeg") 1x,
     );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #41463d;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #41463d;
+  background-size: cover;
 
   &::after {
     content: "";
@@ -38,12 +39,12 @@
 
   @media (min-width: $vp-desktop) {
     min-height: 760px;
-    background-image: 
-    image-set(
-      url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/form/form-desktop@2x.jpg") type("image/jpeg") 2x,
-      url("../../img/form/form-desktop@1x.jpg") type("image/jpeg") 1x,
+    background-image:
+      image-set(
+        url("../../img/form/form-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/form/form-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/form/form-desktop@2x.jpg") type("image/jpeg") 2x,
+        url("../../img/form/form-desktop@1x.jpg") type("image/jpeg") 1x,
       );
   }
 }
@@ -128,6 +129,7 @@
 
 .form__label {
   position: relative;
+
   @include flex(flex-start, center);
 }
 

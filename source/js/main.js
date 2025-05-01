@@ -12,6 +12,7 @@ import initTrainersSwiper from './trainers-swiper.js';
 import initReviewsSwiper from './reviews-swiper.js';
 import initFeaturesSwiper from './features-swiper.js';
 import initGallerySwiper from './gallery-swiper.js';
+import addTitleClass from './about.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
@@ -20,5 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initToursSwiper();
   initTrainersSwiper();
   initReviewsSwiper();
+  addTitleClass();
 });
 

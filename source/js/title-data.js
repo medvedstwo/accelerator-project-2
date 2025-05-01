@@ -1,4 +1,4 @@
-const titleElement = document.querySelectorAll('.title');
+const titleElement = document.querySelectorAll('h2');
 
 const initTitleData = () => {
   titleElement.forEach((el) => {

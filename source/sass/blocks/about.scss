@@ -13,7 +13,7 @@
 
 .about__wrapper {
   overflow-x: hidden;
-  
+
   @media (min-width: $vp-tablet) {
     display: grid;
     grid-template-columns: 1fr 406px 270px 1fr;
@@ -60,16 +60,16 @@
     line-height: 22px;
     margin: 0 0 42px;
 
-    &::before {
-      content: attr(data-title);
-      position: absolute;
-      top: -12px;
-      font-size: 26px;
-      font-weight: 800;
-      line-height: 26px;
-      color: $color-primary;
-      opacity: 0.03;
-    }
+    // &::before {
+    //   content: attr(data-title);
+    //   position: absolute;
+    //   top: -12px;
+    //   font-size: 26px;
+    //   font-weight: 800;
+    //   line-height: 26px;
+    //   color: $color-primary;
+    //   opacity: 0.03;
+    // }
   }
 
   @media (min-width: $vp-tablet) {
@@ -80,7 +80,7 @@
       font-size: 25px;
       line-height: 25px;
       margin-bottom: 46px;
-  
+
       &::before {
         top: -14px;
         font-size: 40px;
@@ -96,7 +96,7 @@
       font-size: 35px;
       line-height: 35px;
       margin-bottom: 57px;
-  
+
       &::before {
         top: -20px;
         font-size: 55px;

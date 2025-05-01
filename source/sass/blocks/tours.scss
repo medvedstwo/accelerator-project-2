@@ -2,7 +2,7 @@
   @include flex(center, flex-start);
 
   position: relative;
-  padding: 39px 0 19px;
+  padding: 38px 0 19px;
   overflow-x: hidden;
 
   @media (min-width: $vp-tablet) {
@@ -22,12 +22,12 @@
   }
 
   @media (min-width: $vp-desktop) {
-    width: $container-desktop; 
+    width: $container-desktop;
   }
 }
 
 .tours__title {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 
   @media (min-width: $vp-tablet) {
     margin-bottom: 35px;
@@ -55,7 +55,7 @@
 
 .tours__link {
   @include flex(flex-start, center);
-  
+
   position: relative;
   font-size: 14px;
   font-weight: 700;

@@ -1,5 +1,5 @@
 .hero-swiper {
-  display: grid
+  display: grid;
 }
 
 .hero-swiper__wrapper {
@@ -27,7 +27,7 @@
     background-image: $overlay-primary;
   }
 
-  &--сaucasus {
+  &--caucasus {
     background-color: #6c8cbb;
   }
 
@@ -110,10 +110,12 @@
 
   @media (min-width: $vp-tablet) {
     margin-bottom: 35px;
+
     h2 {
       font-size: 56px;
       line-height: 56px;
     }
+
     p {
       font-size: 17px;
       line-height: 24px;
@@ -197,7 +199,7 @@
 }
 
 .hero-swiper__img-photo {
-  display: none
+  display: none;
 }
 
 .hero-swiper__pagination-wrapper {
@@ -248,7 +250,7 @@
     background-color: #d9d9d9;
   }
 
-  &:focus { 
+  &:focus {
     outline: none;
   }
 
@@ -262,7 +264,7 @@
     height: 20px;
   }
 
-  @media (min-width:$vp-desktop) {
+  @media (min-width: $vp-desktop) {
     cursor: pointer;
   }
 }

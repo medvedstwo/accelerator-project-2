@@ -40,6 +40,7 @@
 
   @media (min-width: $vp-desktop) {
     @include flex(center, center);
+
     gap: 4px;
     margin: 0 auto;
     width: $container-desktop;

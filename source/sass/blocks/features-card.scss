@@ -15,41 +15,6 @@
     background-repeat: no-repeat;
   }
 
-  &--safety {
-    &::before {
-      background-image: url("/__spritemap#sprite-safety-view");
-      background-size: 20px 22px;
-    }
-  }
-
-  &--knowledge {
-    &::before {
-      background-image: url("/__spritemap#sprite-knowledge-view");
-      background-size: 22px 20px;
-    }
-  }
-  
-  &--equipment {
-    &::before {
-      background-image: url("/__spritemap#sprite-boots-view");
-      background-size: 22px 19px;
-    }
-  }
-
-  &--routes {
-    &::before {
-      background-image: url("/__spritemap#sprite-routes-view");
-      background-size: 22px 22px;
-    }
-  }
-
-  &--nature {
-    &::before {
-      background-image: url("/__spritemap#sprite-nature-view");
-      background-size: 22px 15px;
-    }
-  }
-
   @media (min-width: $vp-tablet) {
     padding: 29px 19px;
 
@@ -69,6 +34,41 @@
       width: 54px;
       height: 54px;
     }
+  }
+}
+
+.features-card--safety {
+  &::before {
+    background-image: url("/__spritemap#sprite-safety-view");
+    background-size: 20px 22px;
+  }
+}
+
+.features-card--knowledge {
+  &::before {
+    background-image: url("/__spritemap#sprite-knowledge-view");
+    background-size: 22px 20px;
+  }
+}
+
+.features-card--equipment {
+  &::before {
+    background-image: url("/__spritemap#sprite-boots-view");
+    background-size: 22px 19px;
+  }
+}
+
+.features-card--routes {
+  &::before {
+    background-image: url("/__spritemap#sprite-routes-view");
+    background-size: 22px 22px;
+  }
+}
+
+.features-card--nature {
+  &::before {
+    background-image: url("/__spritemap#sprite-nature-view");
+    background-size: 22px 15px;
   }
 }
 

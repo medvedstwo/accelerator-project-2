@@ -55,6 +55,7 @@
       font-size: 16px;
       line-height: 24px;
     }
+
     br {
       display: inline;
     }
@@ -193,7 +194,7 @@
     }
   }
 
-  @media (min-width: $vp-desktop) {  
+  @media (min-width: $vp-desktop) {
     &::before {
       content: "";
       top: auto;
@@ -238,34 +239,6 @@
     background-color: $color-primary;
   }
 
-  &--study {
-    &::before {
-      mask-image: url("/__spritemap#sprite-map-full-view");
-      mask-size: 24px 25px;
-    }
-  }
-
-  &--training {
-    &::before {
-      mask-image: url("/__spritemap#sprite-boots-view");
-      mask-size: 25px 21px;
-    }
-  }
-
-  &--lecture {
-    &::before {
-      mask-image: url("/__spritemap#sprite-pine-tree-view");
-      mask-size: 24px 25px;
-    }
-  }
-
-  &--complexity {
-    &::before {
-      mask-image: url("/__spritemap#sprite-mountain-view");
-      mask-size: 25px 25px;
-    }
-  }
-
   @media (min-width: $vp-tablet) {
     font-size: 14px;
     line-height: 22px;
@@ -283,5 +256,33 @@
     &::before {
       margin-left: 10px;
     }
+  }
+}
+
+.trainers__education-description--study {
+  &::before {
+    mask-image: url("/__spritemap#sprite-map-full-view");
+    mask-size: 24px 25px;
+  }
+}
+
+.trainers__education-description--training {
+  &::before {
+    mask-image: url("/__spritemap#sprite-boots-view");
+    mask-size: 25px 21px;
+  }
+}
+
+.trainers__education-description--lecture {
+  &::before {
+    mask-image: url("/__spritemap#sprite-pine-tree-view");
+    mask-size: 24px 25px;
+  }
+}
+
+.trainers__education-description--complexity {
+  &::before {
+    mask-image: url("/__spritemap#sprite-mountain-view");
+    mask-size: 25px 25px;
   }
 }

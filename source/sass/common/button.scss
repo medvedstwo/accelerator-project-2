@@ -66,16 +66,16 @@
     mask-size: 14px 9px;
     background-color: $color-white;
   }
+}
 
-  &--prev {
-    &::before {
-      transform: rotate(180deg);
-    }
+.button__swiper-nav--prev {
+  &::before {
+    transform: rotate(180deg);
   }
+}
 
-  &--disabled {
-    cursor: auto;
-    pointer-events: none;
-    background-color: $color-disabled;
-  }
+.button__swiper-nav--disabled {
+  cursor: auto;
+  pointer-events: none;
+  background-color: $color-disabled;
 }

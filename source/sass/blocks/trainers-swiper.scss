@@ -47,16 +47,16 @@
     margin: 0;
     max-width: 140px;
   }
+}
 
-  a {
+.trainers-swiper__content-link {
+  width: 24px;
+  height: 24px;
+
+  &::before {
     width: 24px;
     height: 24px;
-
-    &::before {
-      width: 24px;
-      height: 24px;
-      mask-size: 14px 8px;
-    }
+    mask-size: 14px 8px;
   }
 }
 

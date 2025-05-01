@@ -1,6 +1,7 @@
 .features {
   @include flex(flex-start, center, column);
-  padding: 37px 0 20px;
+
+  padding: 36px 0 20px;
 
   @media (min-width: $vp-tablet) {
     padding: 60px 0 40px;
@@ -24,7 +25,7 @@
 }
 
 .features__title {
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 
   @media (min-width: $vp-tablet) {
     margin-bottom: 60px;
