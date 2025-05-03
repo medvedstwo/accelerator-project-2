@@ -1,7 +1,7 @@
 .features-card {
   position: relative;
   text-align: center;
-  padding: 18px 8px;
+  padding: 19px 8px;
   height: 100%;
 
   &::before {
@@ -59,16 +59,46 @@
 }
 
 .features-card--routes {
+  br {
+    display: none;
+  }
+
   &::before {
     background-image: url("/__spritemap#sprite-routes-view");
     background-size: 22px 22px;
   }
+
+  @media (min-width: $vp-tablet) {
+    br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .features-card--nature {
+  h3 {
+    width: 170px;
+  }
+
   &::before {
     background-image: url("/__spritemap#sprite-nature-view");
     background-size: 22px 15px;
+  }
+
+  @media (min-width: $vp-tablet) {
+    h3 {
+      width: 200px;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: 100%;
   }
 }
 
@@ -77,7 +107,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 14px;
-    margin: 0 0 15px;
+    margin: 0 auto 15px;
   }
 
   p {
@@ -86,8 +116,8 @@
     margin: 0;
   }
 
-  br {
-    display: inline;
+  span {
+    margin-left: -3px;
   }
 
   @media (min-width: $vp-tablet) {
@@ -100,20 +130,12 @@
       font-size: 14px;
       line-height: 22px;
     }
-
-    br {
-      display: inline;
-    }
   }
 
   @media (min-width: $vp-desktop) {
     h3 {
       font-size: 18px;
       line-height: 18px;
-    }
-
-    br {
-      display: none;
     }
   }
 }

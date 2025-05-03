@@ -125,6 +125,12 @@
     mask-image: url("/__spritemap#sprite-duration-view");
     mask-size: 16px 16px;
   }
+
+  @media (min-width: $vp-tablet) {
+    &::before {
+      mask-size: 16px 18px;
+    }
+  }
 }
 
 .tours-card__title {

@@ -6,4 +6,3 @@ const addTitleClass = () => {
 };
 
 export default addTitleClass;
-
