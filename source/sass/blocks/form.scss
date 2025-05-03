@@ -53,7 +53,7 @@
   width: 258px;
 
   @media (min-width: $vp-tablet) {
-    row-gap: 25px;
+    row-gap: 23px;
     width: 360px;
   }
 
@@ -95,6 +95,7 @@
     p {
       font-size: 16px;
       line-height: 24px;
+      width: 300px;
     }
 
     br {
@@ -117,6 +118,8 @@
   width: 100%;
 
   @media (min-width: $vp-tablet) {
+    display: grid;
+    grid-template-rows: repeat(3, 56px);
     row-gap: 11px;
   }
 
@@ -141,8 +144,12 @@
   border: 1px solid rgba(2, 102, 193, 0.1);
   border-radius: 2px;
 
+  @media (min-width: $vp-tablet) {
+    padding: 18px 30px 17px;
+  }
+
   @media (min-width: $vp-desktop) {
-    padding: 18px 30px;
+    padding: 20px 30px;
   }
 }
 
@@ -154,6 +161,11 @@
   top: 18px;
   left: 15px;
   opacity: 0.5;
+
+  @media (min-width: $vp-tablet) {
+    top: 22px;
+    left: 30px;
+  }
 }
 
 .form__button {
