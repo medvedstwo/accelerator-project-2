@@ -30,6 +30,10 @@ initGallerySwiper(
   {
     modules: [ Navigation],
     loop: true,
+    navigation: {
+      nextEl: '.gallery__button-next',
+      prevEl: '.gallery__button-prev',
+    },
     breakpoints: {
       320: {
         slidesPerView: 'auto',

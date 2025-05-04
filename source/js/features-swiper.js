@@ -30,6 +30,10 @@ initFeaturesSwiper(
   {
     loop: true,
     slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.features-swiper__button-next',
+      prevEl: '.features-swiper__button-prev',
+    }
   }
 );
 

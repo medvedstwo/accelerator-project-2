@@ -156,6 +156,10 @@
 }
 
 .hero-swiper__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 19px 20px;
   min-width: 180px;
 
   @media (min-width: $vp-desktop) {

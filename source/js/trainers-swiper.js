@@ -7,9 +7,9 @@ const trainersSwiper = new Swiper('.trainers-swiper', {
   loop: false,
   initialSlide: 2,
   navigation: {
-    nextEl: '.button__swiper-nav--next',
-    prevEl: '.button__swiper-nav--prev',
-    disabledClass: 'button__swiper-nav--disabled',
+    nextEl: '.trainers__button-next',
+    prevEl: '.trainers__button-prev',
+    disabledClass: 'button-swiper--disabled',
   },
   breakpoints: {
     768: {

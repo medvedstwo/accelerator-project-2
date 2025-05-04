@@ -24,9 +24,9 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
     }
   },
   navigation: {
-    nextEl: '.button__swiper-nav--next',
-    prevEl: '.button__swiper-nav--prev',
-    disabledClass: 'button__swiper-nav--disabled',
+    nextEl: '.reviews__button-next',
+    prevEl: '.reviews__button-prev',
+    disabledClass: 'button-swiper--disabled',
   }
 });
 

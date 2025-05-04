@@ -1,6 +1,11 @@
 .gallery-swiper__wrapper {
   align-items: stretch;
+  padding: 0 0 3px;
   height: 266px;
+
+  @media (min-width: $vp-tablet) {
+    height: 100%;
+  }
 
   @media (min-width: $vp-desktop) {
     display: grid;
@@ -19,6 +24,10 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 157px;
+
+  @media (min-width: $vp-tablet) {
+    max-width: 100%;
+  }
 }
 
 .gallery-swiper__img {
@@ -28,24 +37,9 @@
 }
 
 .gallery-swiper__img--double {
-  height: 134px;
-}
-
-.gallery-swiper__nav {
-  display: none;
+  height: 135px;
 
   @media (min-width: $vp-tablet) {
-    @include flex(flex-end, center);
-
-    position: absolute;
-    top: -50px;
-    right: 0;
-    z-index: 2;
-    gap: 4px;
-    max-width: 238px;
-  }
-
-  @media (min-width: $vp-desktop) {
-    display: none;
+    height: 100%;
   }
 }

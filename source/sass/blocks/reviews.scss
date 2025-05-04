@@ -41,3 +41,22 @@
     margin: 0 0 28px;
   }
 }
+
+.reviews__swiper-nav {
+  display: none;
+
+  @media (min-width: $vp-tablet) {
+    @include flex(flex-end, center);
+
+    position: absolute;
+    top: -45px;
+    right: 0;
+    z-index: 2;
+    gap: 4px;
+    max-width: 238px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    top: -63px;
+  }
+}

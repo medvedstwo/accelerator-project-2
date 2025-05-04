@@ -59,18 +59,3 @@
     mask-size: 14px 8px;
   }
 }
-
-.trainers-swiper__nav {
-  display: none;
-
-  @media (min-width: $vp-tablet) {
-    @include flex(flex-end, center);
-
-    position: absolute;
-    top: -3px;
-    right: 0;
-    z-index: 2;
-    gap: 4px;
-    max-width: 238px;
-  }
-}
