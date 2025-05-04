@@ -28,6 +28,7 @@ initFeaturesSwiper(
   '(min-width: 1440px)',
   '.features-swiper',
   {
+    modules: [Navigation],
     loop: true,
     slidesPerView: 'auto',
     navigation: {

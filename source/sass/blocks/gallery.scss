@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $vp-desktop) {
-    padding: 119px 0 3px;
+    padding: 123px 0 3px;
   }
 }
 
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $vp-desktop) {
-    margin: 0 auto 41px;
+    margin: 0 auto 45px;
     width: $container-desktop;
   }
 }
@@ -30,6 +30,10 @@
 
   @media (min-width: $vp-tablet) {
     margin: 0 0 30px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin: 0 0 24px;
   }
 }
 
@@ -48,6 +52,17 @@
     p {
       font-size: 14px;
       line-height: 22px;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: 620px;
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0;
     }
   }
 }

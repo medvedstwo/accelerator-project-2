@@ -11,12 +11,17 @@
     display: grid;
     grid-template-columns: repeat(5, 284px);
     justify-content: space-between;
+    height: 463px;
   }
 }
 
 .gallery-swiper__slide {
   width: 158px;
   height: auto;
+
+  @media (min-width: $vp-desktop) {
+    width: 284px;
+  }
 }
 
 .gallery-swiper__slide--double {
