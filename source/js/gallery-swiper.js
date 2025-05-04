@@ -30,6 +30,7 @@ initGallerySwiper(
   {
     modules: [ Navigation],
     loop: true,
+    init: true,
     navigation: {
       nextEl: '.gallery__button-next',
       prevEl: '.gallery__button-prev',

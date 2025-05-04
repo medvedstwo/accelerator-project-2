@@ -81,6 +81,35 @@
     background-color: $color-primary;
   }
 
+  &:hover {
+    opacity: 0.1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: $color-secondary;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &:active {
+    color: $color-active;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+    pointer-events: none;
+
+    &::after {
+      background-color: $color-disabled;
+    }
+  }
+
   @media (min-width: $vp-tablet) {
     font-size: 16px;
     line-height: 16px;

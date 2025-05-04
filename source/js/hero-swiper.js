@@ -7,7 +7,6 @@ const heroSwiper = new Swiper('.hero-swiper', {
   modules: [ Pagination],
   init: false,
   loop: true,
-  // initialSlide: 1,
   pagination: {
     el: '.hero-swiper__pagination',
     bulletElement: 'button',
@@ -18,7 +17,8 @@ const heroSwiper = new Swiper('.hero-swiper', {
     1440: {
       pagination: {
         clickable: true,
-      }
+      },
+      allowTouchMove: false,
     }
   }
 });

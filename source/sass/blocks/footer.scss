@@ -40,6 +40,19 @@
     fill: $color-primary;
   }
 
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $vp-desktop) {
     padding: 9px 29px;
     width: 200px;

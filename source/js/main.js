@@ -22,4 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initTrainersSwiper();
   initReviewsSwiper();
   addTitleClass();
+  initGallerySwiper();
+  initFeaturesSwiper();
 });

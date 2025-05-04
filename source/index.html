@@ -9,7 +9,7 @@
   </head>
 
   <body class="page-body">
-    <header class="header" data-test="header">
+    <header class="header" data-test="header" id="header">
       <div class="header__wrapper">
         <div class="nav header__nav">
           <button class="button nav__button" type="button">
@@ -661,7 +661,7 @@
                   <source type="image/webp" media="(min-width: 320px)" srcset="img/gallery/slide-5/slide-5-desktop@1x.webp 1x, img/gallery/slide-5/slide-5-desktop@2x.webp 2x" width="157" height="130">
                   <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/slide-5/slide-5-desktop@1x.jpg 1x, img/gallery/slide-5/slide-5-desktop@2x.jpg 2x" width="284" height="233">
                   <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/slide-5/slide-5-desktop@1x.jpg 1x, img/gallery/slide-5/slide-5-desktop@2x.jpg 2x" width="252" height="206">
-                  <img class="gallery-swiper__img" src="img/gallery/slide-5/slide-5-mobile@2x.jpg" srcset="img/gallery/slide-5/slide-5-desktop@2x.jpg 2x" width="157" height="130" alt="Группа туристов идет вдоль ледяной реки.">
+                  <img class="gallery-swiper__img gallery-swiper__img--double" src="img/gallery/slide-5/slide-5-mobile@2x.jpg" srcset="img/gallery/slide-5/slide-5-desktop@2x.jpg 2x" width="157" height="130" alt="Группа туристов идет вдоль ледяной реки.">
                 </picture>
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/slide-6/slide-6-desktop@1x.webp 1x, img/gallery/slide-6/slide-6-desktop@2x.webp 2x" width="284" height="233">
@@ -675,7 +675,7 @@
               <div class="swiper-slide gallery-swiper__slide">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)" srcset="img/gallery/slide-7/slide-7-desktop@1x.webp 1x, img/gallery/slide-7/slide-7-desktop@2x.webp 2x" width="284" height="463">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/slide-4/slide-7-desktop@1x.webp 1x, img/gallery/slide-7/slide-7-desktop@2x.webp 2x" width="253" height="418">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/slide-7/slide-7-desktop@1x.webp 1x, img/gallery/slide-7/slide-7-desktop@2x.webp 2x" width="253" height="418">
                   <source type="image/webp" media="(min-width: 320px)" srcset="img/gallery/slide-7/slide-7-desktop@1x.webp 1x, img/gallery/slide-7/slide-7-desktop@2x.webp 2x" width="158" height="266">
                   <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/gallery/slide-7/slide-7-desktop@1x.jpg 1x, img/gallery/slide-7/slide-7-desktop@2x.jpg 2x" width="284" height="463">
                   <source type="image/jpeg" media="(min-width: 768px)" srcset="img/gallery/slide-7/slide-7-desktop@1x.jpg 1x, img/gallery/slide-7/slide-7-desktop@2x.jpg 2x" width="253" height="418">
@@ -753,11 +753,12 @@
         <h2 class="visually-hidden">Турагенство Lifetour.</h2>
         <div class="footer__wrapper">
           <div class="footer__header">
-            <div class="logo footer__logo">
+            <a class="logo footer__logo" href="#header">
               <svg width="142" height="42">
                 <use href="/__spritemap#sprite-logo"></use>
               </svg>
-            </div>
+              <span class="visually-hidden">Перейти в начало.</span>
+            </a>
             <div class="footer-nav">
               <ul class="footer-nav__list">
                 <li class="footer-nav__item">
@@ -809,11 +810,6 @@
         </div>
       </section>
     </footer>
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
     <script type="module" src="js/main.js"></script>
   </body>
 

@@ -151,6 +151,23 @@
   border: 1px solid rgba(2, 102, 193, 0.1);
   border-radius: 2px;
 
+  &:hover {
+    outline: 1px solid $color-secondary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-primary;
+  }
+
+  &:disabled {
+    background-color: $color-white;
+    outline: 1px solid $color-disabled;
+  }
+
   @media (min-width: $vp-tablet) {
     padding: 18px 30px 17px;
   }
