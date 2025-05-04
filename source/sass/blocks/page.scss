@@ -56,3 +56,26 @@
     }
   }
 }
+
+.page__main-section {
+  @media (min-width: $vp-tablet) {
+    background-image: image-set(
+      url('../../img/features/clouds-1@1x.webp') type("image/webp") 1x,
+      url('../../img/features/clouds-1@2x.webp') type("image/webp") 2x,
+      url('../../img/features/clouds-1@1x.png') type("image/png") 1x,
+      url('../../img/features/clouds-1@2x.png') type("image/png") 2x,
+    ), image-set(
+      url('../../img/features/clouds-2@1x.webp') type("image/webp") 1x,
+      url('../../img/features/clouds-2@2x.webp') type("image/webp") 2x,
+      url('../../img/features/clouds-2@1x.png') type("image/png") 1x,
+      url('../../img/features/clouds-2@2x.png') type("image/png") 2x,
+    );
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: top 705px left 0px, bottom 165px right -140px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    background-position: top 105px left -275px, bottom 320px right -650px;
+  }
+}
